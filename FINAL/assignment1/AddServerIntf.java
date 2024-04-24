@@ -23,3 +23,5 @@ public interface AddServerIntf extends Remote{
 //java AddServer
 
 //java AddClient
+
+//ipconfig 

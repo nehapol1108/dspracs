@@ -22,7 +22,7 @@ public class AddClient {
             System.out.println("Enter distance in miles : ");
             double miles = sc.nextDouble();
             System.out.println("distance in KM : " + addServerIntf.milesToKm(miles));
-            sc.nextLine();
+            sc.nextLine(); //important to add 
             System.out.println("Enter name : ");
             String name = sc.nextLine();
             System.out.println(addServerIntf.echoServer(name));

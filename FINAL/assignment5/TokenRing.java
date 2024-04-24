@@ -25,9 +25,6 @@ public class TokenRing{
                 int data = sc.nextInt();
     
                 System.out.println("Token passing");
-                // for(int i=token;i<sender;i++){
-                //     System.out.println(" "+ i + "->");
-                // }
 
                 for(int i=token;i!=sender;i=(i+1)%n){
                     System.out.println(" "+ i + "->");
