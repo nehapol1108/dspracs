@@ -8,7 +8,7 @@ public class TokenRing{
         int n = sc.nextInt();
         System.out.println("Ring formed is as below : ");
         for(int i=0;i<n;i++){
-            System.out.println(i + " ");
+            System.out.print(i + "->");
         }
         System.out.println("0");
         int token = 0;
@@ -22,22 +22,23 @@ public class TokenRing{
                 int reciever = sc.nextInt();
     
                 System.out.println("Enter the data to be sent");
-                int data = sc.nextInt();
+                sc.nextLine();
+                String data = sc.nextLine();
     
                 System.out.println("Token passing");
 
                 for(int i=token;i!=sender;i=(i+1)%n){
-                    System.out.println(" "+ i + "->");
+                    System.out.print(" "+ i + "->");
                 }
 
                 System.out.println(" "+ sender);
-                System.out.println("sender " + sender + " sending data "+ data );
+                System.out.println("sender " + sender + " sending data ["+ data +" ] ");
 
                 for(int i=sender;i!=reciever ; i = (i+1)%n){
-                    System.out.println("Data" +data+ " forwarded by " + i);
+                    System.out.println("Data [ " +data+ " ] forwarded by " + i);
                 }
 
-                System.out.println("reciever " +  reciever + " recieved the data "+ data);
+                System.out.println("reciever " +  reciever + " recieved the data [ "+ data + " ] ");
                 token = sender;
                 System.out.println("Do you want to send data ? press 1 else 0 : ");
                 choice = sc.nextInt();
